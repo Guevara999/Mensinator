@@ -19,18 +19,18 @@ jobs:
 
     - name: Inject Custom Branding Configuration
       run: |
-        # Change "Aura Flow" below to "Calculator" if you want to turn on Stealth Mode!
+        # 1. Safely replace the launcher name string references inside resources
         find . -type f -name "strings.xml" -exec sed -i 's/>Mensinator</>Aura Flow</g' {} +
         find . -type f -name "strings.xml" -exec sed -i 's/mensinator/Aura Flow/g' {} +
         
-        # Premiumize the default cycle notification message text safely
-        find . -type f -name "strings.xml" -exec sed -i 's/Your period is about to start/Your cycle window is approaching. Let'\''s check in on your symptoms today ✨/g' {} +
+        # 2. Update notification strings using plain, escape-safe text phrasing
+        find . -type f -name "strings.xml" -exec sed -i 's/Your period is about to start/Your cycle window is approaching. Let us check on your symptoms today ✨/g' {} +
 
     - name: Grant Execute Permission for Gradle
       run: chmod +x gradlew
 
     - name: Build Android APK
-      run: ./gradlew assembleDebug --no-daemon
+      run: ./gradlew :app:assembleDebug --no-daemon
 
     - name: Upload Finished APK
       uses: actions/upload-artifact@v4
