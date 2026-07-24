@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
-    <string name="app_name">Aura Flow</string>
-    <string name="title_activity_main">Aura Flow</string>
+    <!-- App Name -->
+    <string name="app_name">Mensinator</string>
 
-    <!-- Home Dashboard Controls -->
+    <!-- Home -->
     <string name="previous">Previous</string>
     <string name="next">Next</string>
     <string name="period_button">Period</string>
@@ -17,43 +15,39 @@
     <string name="ovulation_button_selected">Remove Ovulation</string>
     <string name="ovulation_button_not_selected">Add Ovulation</string>
     
-    <!-- Home Dashboard Alerts -->
+    <!-- Home Alerts -->
     <string name="empty_click_alert">No dates to save or remove</string>
     <string name="successfully_saved_alert">Changes saved successfully</string>
     <string name="no_data_selected">No dates selected</string>
-    <string name="only_day_alert">Only one day can be selected for ovulation!</string>
+    <string name="only_day_alert">Only one day can be ovulation!</string>
     <string name="success_saved_ovulation">Ovulation saved successfully</string>
     <string name="no_date_selected_ovulation">No date selected for ovulation</string>
 
-    <!-- Navigation Bar Navigation -->
+    <!-- navigation -->
     <string name="home_page">Home</string>
-    <string name="statisic_page">Insights &amp; Trends</string>
+    <string name="statisic_page">Statistics</string>
     <string name="symptoms_page">Symptoms</string>
     <string name="settings_page">Settings</string>
 
-    <!-- Symptoms Management Module -->
+    <!-- symptoms page -->
     <string name="delete_symptom">Delete Symptom</string>
     <string name="delete_question">Are you sure you want to delete this symptom?</string>
     <string name="delete_button">Delete</string>
 
-    <!-- Settings Feature Configurations -->
+    <!-- Settings -->
     <string name="app_settings">App Settings</string>
-    <string name="colors">Theme Colors</string>
+    <string name="colors">Colors</string>
     <string name="period_color">Period</string>
     <string name="selection_color">Selection</string>
     <string name="period_selection_color">Period Selection</string>
     <string name="expected_period_color">Expected Period</string>
     <string name="ovulation_color">Ovulation</string>
     <string name="expected_ovulation_color">Expected Ovulation</string>
-    
-    <!-- Flo-Style Intelligent Reminders -->
     <string name="reminders">Reminders</string>
     <string name="days_before_reminder">Days Before Reminder</string>
-    <string name="period_notification_title">Aura Flow Reminder</string>
-    <string name="period_notification_message">Your cycle window is approaching. Let\'s check in on your symptoms today ✨</string>
+    <string name="period_notification_title">Period Notification Message</string>
+    <string name="period_notification_message">Your period is about to start</string>
     <string name="change_text">Change text</string>
-    
-    <!-- Advanced Calculations Configuration -->
     <string name="other_settings">Other Settings</string>
     <string name="luteal_phase_calculation">Luteal Phase Calculation</string>
     <string name="period_history">Period History</string>
@@ -65,22 +59,23 @@
     <string name="close">Close</string>
     <string name="save">Save</string>
     <string name="warning">Warning</string>
-    <string name="luteal_calculation_message">This calculation will use your number of luteal days (days from ovulation to period) to predict your next period.\nIn order for this to work, you need to track your ovulations in the app and have at least three ovulations in the history.\nIf you are unsure about this setting, turn it off or join our Discord server to ask for help.\nIf the criteria are not met, the prediction will not work.\nThis calculation is good if you have irregular ovulations but a fairly regular number of luteal days.</string>
+    <string name="luteal_calculation_message">This calculation will use your number of luteal days (days from ovulation to period) to predict your next period.\nIn order for this to work, you need to track your ovulations in the app and have at least three ovulations in the history.\nIf you are unsure about this setting, turn it off or join our Discord server to ask for help.\nIf the criteria are not met, the prediction will not work.\nThis calculation is good if you have irregular ovulations but a fairly regular number of luteal days.
+    </string>
     
-    <!-- Color System Personalization Values -->
-    <string name="color_red">Blush Red</string>
-    <string name="color_green">Sage Green</string>
-    <string name="color_blue">Ocean Blue</string>
-    <string name="color_yellow">Sunlit Yellow</string>
-    <string name="color_cyan">Teal Cyan</string>
-    <string name="color_magenta">Pastel Rose</string>
-    <string name="color_black">Deep Velvet</string>
-    <string name="color_white">Pure Canvas</string>
-    <string name="color_darkgray">Charcoal Slate</string>
-    <string name="color_gray">Soft Silver</string>
+    <!-- Color values -->
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_cyan">Cyan</string>
+    <string name="color_magenta">Magenta</string>
+    <string name="color_black">Black</string>
+    <string name="color_white">White</string>
+    <string name="color_darkgray">Dark Gray</string>
+    <string name="color_gray">Light Gray</string>
 
-    <!-- Cycle Diagnostics & Statistics Metrics -->
-    <string name="statistics_title">Aura Analytics</string>
+    <!-- Statistics -->
+    <string name="statistics_title">Statistics</string>
     <string name="period_count">Periods tracked: </string>
     <string name="average_cycle_length">Average cycle: </string>
     <string name="average_period_length">Average period: </string>
@@ -93,23 +88,25 @@
     <string name="average_luteal_length">Average luteal phase length: </string>
     <string name="days"> days</string>
 
-    <!-- Logging Symptoms Interface Data Components -->
-    <string name="symptoms_dialog_title">Edit Tracked Symptoms</string>
-    <string name="create_new_symptom_button">Create New Custom Symptom</string>
-    <string name="save_symptoms_button">Save My Symptoms</string>
+    <!-- Symptoms -->
+    <string name="symptoms_dialog_title">Edit Symptoms</string>
+    <string name="create_new_symptom_button">Create New Symptom</string>
+    <string name="save_symptoms_button">Save Symptoms</string>
     <string name="cancel_button">Cancel</string>
     <string name="heavy">Heavy Flow</string>
     <string name="medium">Medium Flow</string>
     <string name="light">Light Flow</string>
 
-    <!-- Custom Symptom Generation Interfaces -->
-    <string name="create_new_symptom_dialog_title">Create New Symptom Category</string>
-    <string name="symptom_name_label">Symptom Tracking Label</string>
-    <string name="save_button">Save Configuration</string>
-    <string name="manage_symptoms">Manage My Symptoms</string>
+    <!-- CreateNewSymptomDialog -->
+    <string name="create_new_symptom_dialog_title">Create New Symptom</string>
+    <string name="symptom_name_label">Symptom Name</string>
+    <string name="save_button">Save</string>
 
-    <!-- Aura Master Calendar Matrix Constants -->
-    <string name="calendar_title">Aura Calendar</string>
+    <!-- CreateNewSymptomDialog -->
+    <string name="manage_symptoms">Manage Symptoms</string>
+
+    <!-- Calender -->
+    <string name="calendar_title">Calendar</string>
     <string name="mon">Mon</string>
     <string name="tue">Tue</string>
     <string name="wed">Wed</string>
@@ -118,7 +115,6 @@
     <string name="sat">Sat</string>
     <string name="sun">Sun</string>
 
-    <!-- Chronological Calendar Localization Nodes -->
     <string name="january">January</string>
     <string name="february">February</string>
     <string name="march">March</string>
@@ -132,27 +128,63 @@
     <string name="november">November</string>
     <string name="december">December</string>
 
-    <!-- Native Secure Privacy Backup Engines -->
-    <string name="export_import_title">Secure Local Backup Engine</string>
-    <string name="export_button">Export Local Profile</string>
-    <string name="import_button">Import Encrypted Backup</string>
-    <string name="export_success_toast">Profile safely exported to %1$s</string>
-    <string name="import_success_toast">Encrypted data archive imported successfully</string>
-    <string name="import_failure_toast">Data profile signature failure during import</string>
-    <string name="export_path_label">Target storage destination: %1$s</string>
-    <string name="import_path_label">Source selection track: %1$s</string>
-    <string name="import_dialog_message">Select an encrypted .json file payload to restore tracking metrics.</string>
-    <string name="export_dialog_message">Generate an offline data log containing complete symptoms, historical dates, and cycle maps.</string>
-    <string name="select_source">Select system storage entry source</string>
+    <!-- Import Export Dialog -->
+    <string name="export_import_title">Export/Import Data</string>
+    <string name="export_button">Export</string>
+    <string name="import_button">Import</string>
+    <string name="export_success_toast">Exported to %1$s</string>
+    <string name="import_success_toast">File was imported successfully</string>
+    <string name="import_failure_toast">Failed to import file</string>
+    <string name="export_path_label">Exporting file to: %1$s</string>
+    <string name="import_path_label">Import Path: %1$s</string>
+    <string name="import_dialog_message">Select file to import data.</string>
+    <string name="export_dialog_message">Select the output path to export calendar entries, symptoms and other data.</string>
+    <string name="select_source">Select app source</string>
 
-    <!-- Built-in Knowledge Base & FAQ Structure -->
-    <string name="faq_title">Aura Help Center</string>
+    <!-- Frequently Asked Questions -->
+    <string name="faq_title">Frequently Asked Questions</string>
 
-    <!-- Fully Localised Premium User Manual Section Documents -->
-    <string name="user_manual_header">Aura Flow User Manual</string>
-    <string name="how_to_use">Quick Setup Instructions:</string>
-    <string name="select_dates">• Logging Dates: Tap securely on any tracking date matrix grid block to toggle select state.</string>
-    <string name="add_or_remove_dates">• Cycle Windows: Tap the \'Add or Remove Dates\' control tray execution trigger after selecting period nodes.</string>
-    <string name="symptoms">• Logging Symptoms: Tap the dashboard \'Symptoms\' interface module to assign custom markers or track physiological traits.</string>
-    <string name="ovulation">• Ovulation Data: Select an isolated target cycle date block and trigger the main ovulation mapping control. To delete, highlight the exact target date structure block and tap the ovulation widget again to toggle it off.</string>
+    <!-- User Manual Section -->
+    <string name="user_manual_header">User Manual</string>
+    <string name="how_to_use">How to Use:</string>
+    <string name="select_dates">• Select Dates: Tap on a date to select or deselect it.</string>
+    <string name="add_or_remove_dates">• Add or Remove Dates for Period: Click the \'Add or Remove Dates\' button after selecting dates.</string>
+    <string name="symptoms">• Symptoms: Click the \'Symptoms\' button to view or add symptoms for the selected date.</string>
+    <string name="ovulation">• Ovulation: Select a single date and click the ovulation button. To remove, select the date and press the button again.</string>
+    <string name="statistics">• Statistics: Click statistics in the bottom menu and select statistics.</string>
+    <string name="import_export">• Import/Export: Click the settings button in the bottom menu and then scroll down among the settings. Click import/export to import or export your data. This is a MUST when moving the data to a new device!</string>
+    <string name="calculations">• Calculations: \nPeriods are calculated according to average cycle length and period length.\nPeriods can be calculated using average luteal phase. The calculations will then look at the last 5 cycles to make an average luteal phase and use that to calculate the period. This is activated in the settings.\nOvulation is calculated according to average ovulation cycle length.</string>
+    <string name="features_coming_soon">Features Coming Soon:</string>
+    <string name="upcoming_features">• Check our Github for the latest regarding the apps development!</string>
+    <string name="our_story_header">Our Story</string>
+    <string name="our_story">We are two women who were tired of selling our data to big corporations. Our app stores all your data locally on your device and we have no access to it whatsoever.\nWe value your privacy and do not save or share any personal information. Since launching this app we have grown and now have our own Discord server with people who are passionate about this app and want to help us out!\n\nJoin us on Discord here: https://discord.gg/tHA2k3bFRN</string>
+    <string name="disclaimer_header">Disclaimer:</string>
+    <string name="disclaimer">• This is a hobby project and is not intended for medical use. We are simply doing this for our own needs. But we do welcome ideas and requests. Join us on Discord or send us an email:\nmensinator.app@gmail.com</string>
+
+    <!-- Widget Strings -->
+    <string name="widget_days_until_period_no_label_with_bg">Days until period, without label, with background</string>
+    <string name="widget_days_until_period_with_label_with_bg">Days until period, with label, with background</string>
+    <string name="widget_days_until_period_no_label_no_bg">Days until period, without label, without background</string>
+    <string name="widget_days_until_period_with_label_no_bg">Days until period, with label, without background</string>
+    <!-- When a period widget without labels is shown, the widget only shows "7 P" for example -->
+    <string name="widget_period_abbreviation">P</string>
+    <string name="widget_ovulation_abbreviation">O</string>
+    <!-- Sample values shown only in the widget picker preview -->
+    <string name="widget_preview_sample_number">10</string>
+    <string name="widget_preview_sample_with_label">Period in 10 days</string>
+
+
+    <!-- Universal/ Repeated Strings -->
+    <string name="close_button">Close</string>
+    <string name="data_settings">Backup</string>
+    <string name="data">Saved Data</string>
+    <string name="Import">Import</string>
+    <string name="data_export">Export</string>
+    <string name="select_file">Select file for import</string>
+    <string name="select_file_button">Select</string>
+    <string name="import_export_data">Import Export Data</string>
+    <string name="import_data">Import Data</string>
+    <string name="export_data">Export Data</string>
+    <string name="about_app">About App</string>
+    <string name="rename_symptom" >Rename symptom</string>
 </resources>
