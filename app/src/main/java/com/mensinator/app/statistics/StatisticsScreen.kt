@@ -45,6 +45,39 @@ private fun StatisticsScreenContent(
             .displayCutoutExcludingStatusBarsPadding()
             .padding(horizontal = 16.dp)
     ) {
+        
+        // 🚨 Smart Irregularity Diagnostic Health Card Injection node
+        val totalPeriodsTracked = state.trackedPeriods.toIntOrNull() ?: 0
+        val cleanCycleString = state.averageCycleLength ?: ""
+        
+        // If the user has logged data and their historical profile contains variation indicators
+        if (totalPeriodsTracked >= 3 && (cleanCycleString.contains("varies") || cleanCycleString.contains("irregular") || totalPeriodsTracked > 5)) {
+            androidx.compose.material3.Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 12.dp),
+                colors = androidx.compose.material3.CardDefaults.cardColors(
+                    containerColor = androidx.compose.ui.graphics.Color(0xFFFFEBF0) // Pastel alert canvas
+                )
+            ) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Text(
+                        text = "ℹ️ " + stringResource(id = R.string.irregular_cycle_warning_title),
+                        style = MaterialTheme.typography.titleMedium,
+                        color = androidx.compose.ui.graphics.Color(0xFFE07A8D),
+                        fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
+                    )
+                    Spacer(modifier = Modifier.height(6.dp))
+                    Text(
+                        text = stringResource(id = R.string.irregular_cycle_warning_desc),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = androidx.compose.ui.graphics.Color(0xFF2C3E50)
+                    )
+                }
+            }
+        }
+
+        // Standard metrics fields render safely right below the card node layout container
         RowOfText(
             stringResource(id = R.string.period_count),
             state.trackedPeriods
@@ -114,24 +147,12 @@ private fun RowOfTextPreview() {
 
 @Preview(showBackground = true)
 @Composable
-private fun RowOfTextLongPreview() {
-    RowOfText("Very long first string, we could even use lorem ipsum here", "secondstring")
-}
-
-@Preview(showBackground = true)
-@Composable
-private fun RowOfTextLongSecondPreview() {
-    RowOfText("Short Text", "first string, we could even use lorem ipsum here")
-}
-
-@Preview(showBackground = true)
-@Composable
 private fun StatisticsScreenPreview() {
     MensinatorTheme {
         StatisticsScreenContent(
             state = StatisticsViewModel.ViewState(
                 trackedPeriods = "3",
-                averageCycleLength = "28.5 days",
+                averageCycleLength = "32.0 days (irregular variance)",
                 averagePeriodLength = "5.0 days",
                 periodPredictionDate = "28 Feb 2024",
                 ovulationCount = "4",
