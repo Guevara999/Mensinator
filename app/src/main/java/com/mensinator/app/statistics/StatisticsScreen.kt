@@ -46,18 +46,18 @@ private fun StatisticsScreenContent(
             .padding(horizontal = 16.dp)
     ) {
         
-        // 🚨 Smart Irregularity Diagnostic Health Card Injection node
-        val totalPeriodsTracked = state.trackedPeriods.toIntOrNull() ?: 0
+        // 🚨 Safe Null-Checked Irregularity Diagnostic Health Card
+        val rawTracked = state.trackedPeriods
+        val totalPeriodsTracked = rawTracked?.toIntOrNull() ?: 0
         val cleanCycleString = state.averageCycleLength ?: ""
         
-        // If the user has logged data and their historical profile contains variation indicators
         if (totalPeriodsTracked >= 3 && (cleanCycleString.contains("varies") || cleanCycleString.contains("irregular") || totalPeriodsTracked > 5)) {
             androidx.compose.material3.Card(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(vertical = 12.dp),
                 colors = androidx.compose.material3.CardDefaults.cardColors(
-                    containerColor = androidx.compose.ui.graphics.Color(0xFFFFEBF0) // Pastel alert canvas
+                    containerColor = androidx.compose.ui.graphics.Color(0xFFFFEBF0)
                 )
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
@@ -77,7 +77,7 @@ private fun StatisticsScreenContent(
             }
         }
 
-        // Standard metrics fields render safely right below the card node layout container
+        // Standard metrics fields render smoothly below
         RowOfText(
             stringResource(id = R.string.period_count),
             state.trackedPeriods
